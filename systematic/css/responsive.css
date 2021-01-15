@@ -1,0 +1,132 @@
+/*===========================
+    Tablet
+=============================*/
+@media only screen and (min-width:300px) and (max-width:768px){
+    .social-area {
+        max-width: 300px;
+        padding-top: 10px;
+    }
+
+    .inner-menu {
+        background-color: rgba(0,0,0,0.001);
+        min-height:auto;
+    }
+    .inner-menu::after {
+        display:none;
+    }
+    .mean-container .mean-nav{
+        margin-top:0;
+        width:80%;
+    }
+    .inner-header {
+        padding-top: 15px;
+    }
+    .hero-left {
+        max-width: 40%;
+    }
+    .hero-right > h2 {
+        font-size: 60px;
+    }
+    .child-content {
+        width: 30.33%;
+        float: left;
+    }
+}
+
+
+/*
+    Mobile
+*/
+
+@media only screen and (min-width:200px) and (max-width:450px){
+    /* body{
+        overflow: hidden;
+    } */
+    .top-header-mini-menu {
+        padding-top: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .top-header-mini-menu ul {
+        text-align: center;
+    }
+    .top-header-mini-menu ul li {
+        margin-right: 17px;
+    }
+    .top-header-mini-menu ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .top-header-search-area {
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 31px;
+    }
+    .top-header-search-area {
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 31px;
+        float:none;
+    }
+    .top-header-search-area form {
+        width: 100%;
+        height: 28px;
+        margin:0 auto;
+        float:none;
+    }
+    .logo-area {
+        margin: 0 auto;
+        float:none;
+    }
+    .social-area {
+        /* max-width: 700px; */
+        width: 75%;
+        float: none;
+        padding-top: 15px;
+        margin: 0 auto;
+    }
+    .social-area ul li {
+        margin: 0 8px;
+    }
+    .slider-area {
+        margin-top: 25px;
+    }
+    .slider-caption {
+        font-size: 16px;
+    }
+    .hero-right > h2 {
+        font-size: 21px;
+    }
+    .child-content {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .child-footer {
+        width: 100%; 
+    }
+    .child-footer h3 {
+        border:0px solid;
+    }
+    .copy-right {
+        height: 80px;
+        padding:0;
+    }
+    .left{
+        float:none;
+        width: 100%;
+        text-align:center;
+    }
+    .right{
+        float:left;
+        width:100%;
+        text-align:center;
+    }
+
+} 
+
+
+
+
+
+
+

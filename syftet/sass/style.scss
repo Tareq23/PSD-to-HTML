@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;800;900&display=swap');
+*, ::after,::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x:hidden;
+    // overflow:hidden;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    max-width:100%;
+}
+
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	// padding-right: 15px;
+	// padding-left: 15px;
+}
+
+
+
+
+/*==============================================================
+    HEADER SECTION
+=================================================================*/
+
+.nav-section{
+    padding:0;
+    overflow:hidden;
+    .navbar{
+        height:12vmin;
+        background-color: rgba(0,0,0,0.435);
+        img{
+            width:100%;
+            height:100%;
+        }
+        ul{
+            height:12vmin;
+            li{
+                height:12vmin;
+                a{
+                    height:12vmin;
+                    color:#fff;
+                    font-size:1.3em;
+                    // padding:20px 0;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    position:relative;
+                }
+                a:hover::after{
+                    position:absolute;
+                    width:100%;
+                    height:3px;
+                    content:"";
+                    background-color: #00ABC9;
+                    bottom:0;
+                    left:0;                   
+                }
+            }
+            li + li{
+                margin-right:5px;
+            }
+        }
+    }
+}
+
+
+header .slider{
+    width:100vmax;
+    max-height:80vmin;
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    height:80vmin;
+                }
+            }
+        }
+        .control-icon{
+            width:12vmin;
+            span:first-child{
+                color:#fff;
+            }
+        }
+        .carousel-text{
+            position:absolute;
+            display:flex;
+            flex-direction: column;
+            left:0;
+            top:0;
+            color:#fff;
+            // transform:translate(-50%,-50%);
+            width:100vmax;
+            height:100%;
+            // justify-items: center;
+            justify-content: center;
+            background-color:rgba(0,0,0,0.742);
+        }
+        
+        .carousel-text h1{
+            font-size:10vmin;
+            text-align:center;
+            font-weight: 700;
+        }
+        .carousel-text p{
+            font-size:5vmin;
+            text-align:center;
+        }
+        .carousel-text div{
+            margin:0 auto;
+            // text-align:center;
+            width:35vmin;
+            height:10vmin;
+            background-color: #00ABC9;
+            font-size:3vmin;
+            font-weight: 400;
+            border-radius: 5px;
+            a{
+
+                color:#fff;
+               font-size:5vmin;
+               padding:2vmin;
+            }
+        }
+    }
+}
+
+
+/*===============================================
+SERVICE SECTION
+================================================*/
+
+.service-section{
+    overflow:hidden;
+    margin-top:10vmin;
+    .container{
+        margin:0 auto;
+        padding:0;
+        .row{
+            margin:0;
+            padding:0;
+            .col-md-4{
+                width:33.33%;
+                padding:0 8px;
+            }
+            h1{
+                text-transform:uppercase;
+                position:relative;
+                font-size:1.5em;
+                font-weight: 700;
+                padding:15px;
+            }
+            h1::after{
+                position:absolute;
+                content:"";
+                width:12%;
+                height:3px;
+                border-radius: 3px;
+                background-color: rgb(35, 121, 192);
+                bottom:0px;
+
+                left:50%;
+                transform: translate(-50%,0);
+                
+            }
+            padding-bottom: 7vmin;
+            .col-12{
+                margin-top:30px;
+            }
+            .card{
+                // width:33%;
+                // width:30vmin;
+                border-radius:0;
+                border:0 solid;
+                img{
+                    margin:0;
+                    padding:0;
+                }
+                .card-body{
+                    margin:0;
+                    padding:0;
+                    .card-title{
+                        font-size:1.3em;
+                        font-weight: 600;
+                        text-align: left;
+                        padding-top:5px;
+                    }
+                    .card-text{
+                        font-size:1em;
+                        font-weight: 400;
+                        text-align:left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*=========================================================
+COUNTER SECTION
+===========================================================*/
+
+
+.counter-section{
+    background-image:url('../img/counter.jpg');
+    background-position: center center;
+    background-size:200% 1000%;
+    background-attachment: cover;
+    .container-fluid{
+        padding:0;
+        .row{
+            padding:0;
+            height:100%;
+            .col-md-6,.col-lg-3{
+                background-color: rgba(0,0,0,0.934);
+                height:50vmin;
+                width:100%;
+                overflow: hidden;
+                .counter-box{
+                    overflow: hidden;
+                    padding:10px 0 0 0;
+                    height:100%;
+                    text-align: center;
+                    position: absolute;
+                    left:50%;
+                    top:65%;
+                    transform:translate(-50%,-50%);
+                    color:#fff;
+                    .icon{
+                        font-size:10vmin;
+                    }
+                    .text{
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+/*=================================================================
+ABOUT SECTION
+===================================================================*/
+
+.about-section{
+    .container{
+        .row{
+            .video-area{
+                .img-fluid{
+                    position:relative;
+                    max-width:100%;
+                }
+                .video-icon{
+                    position: relative;
+                    top:-35%;
+                    left:45%;
+                    font-size:5rem;
+                    cursor:pointer;
+                    transform: translate(0,-30%);
+                    color:red;
+                }
+            }
+        }
+    }
+    .unique-us{
+        background-color: rgba(0,0,0,0.231);
+        margin-top:40px;
+        text-align: center;
+        padding:20px 0;
+        h1{
+            text-transform: uppercase;
+            font-size:1.6rem;
+            font-weight: 600;
+        }
+        .row{
+            margin:60px 0;
+            padding:0 50px;
+            .card{
+                flex-direction: row;
+                padding:5px 20px;
+                border:0;
+                background-color: inherit;
+                .card-body{
+                    padding:0;
+                    margin:0 0 20px 15px;
+                    .card-title{
+                        text-transform: uppercase;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        margin:0 0 10px 0;
+
+                    }
+                    .card-text{
+                        font-size:.9rem;
+                        font-weight: 400;;
+                        line-height: 1.4em;
+                        margin-top:10px;
+                        margin:0;
+                    }
+                }
+                .card-img-left{
+                    //margin:0 10px 0 0;
+                    width:160px;
+                    // height:60px;
+                    align-self: center;
+                    justify-self: center;
+                    border-radius: 50%;
+                    img{
+                        font-size:1rem;
+                        padding:0;
+                        background-color:#00ABC9;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+    .technology-used{
+        .container{
+            .top-text{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size:1rem;
+            }
+            .row{
+                .col-md-4,.col-sm-12{
+                    padding:10px 10px;
+                    .card{
+                        flex-direction: row;
+                        border:0;
+                        .card-img{
+                            padding:5px 10px 0 0;
+                            height:70px;
+                            width:120px;
+                            margin:0;
+                            img{
+                                margin:0;
+                                padding:0;
+                                border-radius: 50%;
+                                background-color: #00ABC9;
+                                color:#fff;
+                                text-align: center;
+                            }    
+                        }
+                        .card-body{
+                            padding:0;
+                            margin:0 0 0 0px;
+                            .card-title{
+                                text-transform:uppercase;
+                                font-size:1.4em;
+                                font-weight:600;
+                            }
+                            .card-text{
+                                font-size:0.9em;
+                                font-weight: 400;
+                                text-align:left;
+                            }
+
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+/*=======================================================
+    PRODUCT AND PORTFOLIO
+=========================================================*/
+
+.product-portfolio{
+    .product-display{
+        flex-direction:column;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*=========================================================
+    TEAM SECTION
+===========================================================*/
+
+
+
+.team-section{
+    .container{
+        .col-md-4,.col-sm-12{
+            .card{
+                border:none;
+                .card-img-top{
+                    max-width:60%;
+                    margin:0 auto;
+                    img{
+                        // text-align:center;
+                        width:100%;
+                    }
+                }
+                .card-body{
+                    padding:0;
+                    .body-head{
+                        display:flex;
+                        flex-direction: row;
+                        h1{
+                            font-size:1.4rem;
+                            font-weight: 600;
+                        }
+                        .nav{
+                            justify-self: flex-end;
+                            .nav-link{
+                                position:relative;
+                                margin:5px 2px;
+                                background-color: #fff;
+                                padding:0 3px;
+                                border:1px solid gray
+                            }
+                            .nav-link:hover::after{
+                                position:absolute;
+                                width:100%;
+                                height:3px;
+                                content:"";
+                                background-color: #00ABC9;
+                                bottom:0;
+                                left:0; 
+                            }
+                        }
+                    }
+                }    
+            }
+        }
+    }
+}
+
+
+.mail-map-section{
+    .form{
+        label{
+            text-transform: uppercase;
+            padding:0;
+            margin:0;
+        }
+        input{
+            position:relative;
+        }
+        
+    }
+}
+
+
+
+
